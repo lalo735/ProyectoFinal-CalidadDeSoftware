@@ -42,7 +42,7 @@ public class UadyVirtualLoginTest {
     driver.findElement(By.id("password")).clear();
     driver.findElement(By.id("password")).sendKeys("value");
     driver.findElement(By.id("loginbtn")).click();
-    assertEquals("GONZALO ANTONIO VILLEGAS SULU", driver.findElement(By.xpath("//a[@id='action-menu-toggle-1']/span/span")).getText());
+     assertEquals("Datos erróneos. Por favor, inténtelo otra vez.", driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/section/div/div[2]/div/div/div/div/div[1]/div")).getText());
   }
 
   @After
